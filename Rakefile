@@ -5,11 +5,9 @@ require 'rake'
 require 'jeweler'
 require './lib/geoip'
 
-require 'rake/version_task'
-Rake::VersionTask.new
-
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
+  gem.version = '1.1.3'
   gem.name = "adept_geoip"
   gem.version = GeoIP::VERSION
   gem.homepage = "https://github.com/AdeptMobile/geoip"
@@ -35,7 +33,7 @@ Rake::TestTask.new(:test) do |test|
 end
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "adept_geoip #{GeoIP::VERSION}"
