@@ -9,7 +9,7 @@ Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.version = '1.1.3'
   gem.name = "adept_geoip"
-  gem.version = GeoIP::VERSION
+  #gem.version = GeoIP::VERSION
   gem.homepage = "https://github.com/AdeptMobile/geoip"
   gem.license = "MIT"
   gem.summary = %Q{GeoIP searches a GeoIP database for a given host or IP address, and returns information about the country where the IP address is allocated, and the city, ISP and other information, if you have that database version.Forked by Adept Mobile to modify/extend.}
