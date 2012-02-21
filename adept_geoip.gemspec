@@ -8,12 +8,12 @@ Gem::Specification.new do |s|
   s.version = "1.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Craig Heneveld}]
+  s.authors = [%q{Clifford Heath}, %q{Roland Moriz}]
   s.date = %q{2012-02-21}
   s.description = %q{GeoIP searches a GeoIP database for a given host or IP address, and
 returns information about the country where the IP address is allocated,
 and the city, ISP and other information, if you have that database version. Forked by Adept Mobile to modify/extend.}
-  s.email = [%q{craig.heneveld@adeptmobi.com}]
+  s.email = [%q{clifford.heath@gmail.com}, %q{rmoriz@gmail.com}]
   s.executables = [%q{geoip}]
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -22,7 +22,6 @@ and the city, ISP and other information, if you have that database version. Fork
     "History.rdoc",
     "README.rdoc",
     "Rakefile",
-    "adept_geoip.gemspec",
     "bin/geoip",
     "config/website.yml",
     "data/geoip/country_code.yml",
