@@ -112,8 +112,8 @@ class GeoIP
 
   end
 
-  class City < Struct.new(:request, :ip, :country_code2, :country_code3, :country_name, :continent_code,
-                          :region_name, :city_name, :postal_code, :latitude, :longitude, :dma_code, :area_code, :timezone)
+  class City < Struct.new(:request, :ip, :country_code, :country_code3, :country_name, :continent_code,
+                          :region_code, :city, :zipcode, :latitude, :longitude, :metrocode, :area_code, :timezone)
 
     def to_hash
       Hash[each_pair.to_a]
