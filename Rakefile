@@ -5,6 +5,9 @@ require 'rake'
 require 'jeweler'
 require './lib/geoip'
 
+require 'rake/version_task'
+Rake::VersionTask.new
+
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "adept_geoip"
@@ -15,8 +18,8 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{GeoIP searches a GeoIP database for a given host or IP address, and
 returns information about the country where the IP address is allocated,
 and the city, ISP and other information, if you have that database version. Forked by Adept Mobile to modify/extend.}
-  gem.email = %w[craig.heneveld@adeptmobi.com]
-  gem.authors = ["Craig Heneveld"]
+  gem.email = %w[clifford.heath@gmail.com rmoriz@gmail.com]
+  gem.authors = ["Clifford Heath", "Roland Moriz"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
