@@ -22,7 +22,6 @@ and the city, ISP and other information, if you have that database version. Fork
     "History.rdoc",
     "README.rdoc",
     "Rakefile",
-    "adept_geoip.gemspec",
     "bin/geoip",
     "config/website.yml",
     "data/geoip/country_code.yml",
